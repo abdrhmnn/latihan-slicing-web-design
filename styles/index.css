@@ -1,0 +1,339 @@
+:root{
+  --bg-main: hsl(36, 100%, 99%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins';
+  font-size: 16px;
+  background-color: var(--bg-main);
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 20px 20px 0 20px;
+}
+
+/* styling for navbar */
+section#navbar nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.logo img{
+  width: 50px;
+}
+
+.nav-link{
+  display: flex;
+  justify-content: space-between;
+  width: 440px;
+  font-size: 15px;
+}
+
+.nav-link li{
+  list-style-type: none;
+}
+
+.nav-link li a{
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+  transition: .5s;
+}
+
+.nav-link li a:hover{
+  color: hsl(5, 85%, 63%);
+}
+/* end styling for navbar */
+
+/* styling for header */
+section#header{
+  display: grid;
+  grid-template-areas: 
+  "header-one header-two"
+  "header-one header-two";
+  grid-template-columns: 2fr 1fr;
+  gap: 0 15px;
+}
+
+.group-flex-header-one{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-one{
+  grid-area: header-one;
+}
+
+.header-one .header-one-img img{
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.header-one .header-one-title p {
+  font-size: 2.3em;
+  font-weight: 800;
+  color: hsl(240, 100%, 5%);
+  line-height: 40px;
+}
+
+.header-one-title{
+  width: 200px;
+  margin-right: 15px;
+}
+
+.group-paragraf-button{
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+}
+
+.header-one-paragraf p{
+  font-size: .85em;
+  font-weight: 500;
+  color: hsl(236, 13%, 42%);
+  line-height: 22px;
+}
+
+.header-one-button{
+  background-color: hsl(5, 85%, 63%);
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: .8em;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .5s;
+}
+
+.header-one-button:hover{
+  background-color: hsl(240, 100%, 5%);
+}
+
+.header-two{
+  grid-area: header-two;
+  background-color: hsl(240, 100%, 5%);
+  color: #fff;
+  padding: 20px 20px 20px 20px;
+}
+
+.header-two h3{
+  color: hsl(35, 77%, 62%);
+  font-size: 1.6em;
+  margin-bottom: 15px;
+}
+
+.group-header-two{
+  display: flex;
+  flex-direction: column;
+}
+
+.group-header-two .group-one, .group-two{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.group-header-two .group-one h4, .group-two h4, .group-three h4{
+  font-size: 1em;
+  transition: .5s;
+}
+
+.group-header-two .group-one h4:hover, .group-two h4:hover, .group-three h4:hover{
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+
+.group-header-two .group-one p, .group-two p, .group-three p{
+  font-size: .8em;
+  margin-top: 6px;
+  color: hsl(236, 13%, 42%);
+  font-weight: 600;
+}
+/* end styling for header */
+
+/* styling for card */
+section#card{
+  display: flex;
+  gap: 0 10px;
+  margin-top: 40px;
+}
+
+.card-one, .card-two, .card-three{
+  display: flex;
+  gap: 0 15px;
+}
+
+.card-one .card-one-img img, .card-two .card-two-img img, .card-three .card-three-img img{
+  width: 100px;
+}
+
+.card-one-text, .card-two-text, .card-three-text{
+  display: flex;
+  flex-direction: column;
+  gap: 5px 0;
+}
+
+.card-one-text .card-one-text-number, .card-two-text .card-two-text-number, .card-three-text .card-three-text-number{
+  font-size: 1.8em;
+  font-weight: 600;
+  color: hsla(0, 0%, 59%, 0.352);
+}
+
+.card-one-text h4, .card-two-text h4, .card-three-text h4{
+  color: hsl(240, 100%, 5%);
+  transition: .5s;
+  font-size: .9em;
+}
+
+.card-one-text h4:nth-child(2):hover, .card-two-text h4:nth-child(2):hover, .card-three-text h4:nth-child(2):hover{
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
+}
+
+.card-one-text p, .card-two-text p, .card-three-text p{
+  font-size: .75em;
+  line-height: 22px;
+  color: hsl(236, 13%, 42%);
+}
+/* end styling for card */
+
+/* styling for footer */
+section#footer{
+  margin-top: 30px;
+  background-color: hsl(240, 37%, 66%);
+}
+
+.footer-link{
+  margin-top: 20px;
+  width: 400px;
+  display: flex;
+  padding-left: 10px;
+  flex-direction: column;
+  gap: 10px 0;
+}
+
+.footer-link-one, .footer-link-two, .footer-link-three{
+  display: flex;
+  gap: 0 15px;
+}
+
+.footer-link-one-title p, .footer-link-two-title p, .footer-link-three-title p {
+  font-size: .9em;
+}
+
+.group-footer-flex{
+  display: flex;
+  gap: 0 130px;
+}
+
+.footer-nav ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+}
+
+.footer-nav ul li{
+  list-style-type: none;
+}
+
+.footer-nav ul li a {
+  color: black;
+  text-decoration: none;
+  transition: .5s;
+}
+
+.footer-nav ul li a:hover{
+  color: hsl(5, 85%, 63%);
+}
+
+.footer-copyright{
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-copyright p {
+  font-size: .9em;
+}
+/* end styling for footer */
+
+/* Responsive design */
+/* for tablet view */
+@media screen and (max-width: 768px) {
+  /* responsive header section */
+  section#header{
+    grid-template-areas: 
+    "header-one"
+    "header-two";
+    grid-template-columns: 1fr;
+  }
+
+  .header-one{
+    grid-area: header-one;
+    margin-bottom: 30px;
+  }
+
+  .header-two{
+    grid-area: header-two;
+  }
+
+  .group-flex-header-one{
+    gap: 15px 0;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .header-one-title{
+    width: 300px;
+    margin-right: 0;
+  }
+
+  .group-paragraf-button{
+    width: 100%;
+  }
+  /* end responsive header section */
+
+  /* responsive card section */
+  section#card{
+    gap: 15px 0;
+    flex-direction: column;
+  }
+
+  .card-one-text .card-one-text-number, .card-two-text .card-two-text-number, .card-three-text .card-three-text-number{
+    font-size: 2em;
+  }
+
+  .card-one-text h4, .card-two-text h4, .card-three-text h4{
+    font-size: 1em;
+  }
+
+  .card-one-text p, .card-two-text p, .card-three-text p{
+    font-size: .9em;
+  }
+  /* end responsive card section */
+}
+
+/* for mobile view */
+@media screen and (max-width: 576px){
+  .nav-link{
+    display: none;
+  }
+
+  .card-one-text p, .card-two-text p, .card-three-text p{
+    font-size: .8em;
+  }
+}
